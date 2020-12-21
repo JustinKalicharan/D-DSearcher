@@ -6,8 +6,12 @@ DandD = xmltodict.parse(xml)
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
-    for thing in DandD['compendium']['item']:
-        print(f"{thing['name']}")
+
+
+
+    for d in DandD['compendium']['item']:
+        if d['name'] == 'Copper (cp)':
+            print(f"{d['name']}, {d['text']}")
 
 
 
